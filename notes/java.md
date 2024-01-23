@@ -1,4 +1,17 @@
-Notes from Baeldung's [Getting Started with Java](https://baeldung.com/get-started-with-java-series) series.
+Notes from Baeldung's [Getting Started with Java](https://baeldung.com/get-started-with-java-series) series and W3School's [Java Tutorial](https://w3schools.com/java/default.asp).
+
+---
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Basic Syntax in Java](#basic-syntax-in-java)
+  - [Data Types](#data-types)
+  - [Variables](#variables)
+  - [Arrays](#arrays)
+  - [Keywords](#keywords)
+  - [Operators](#operators)
+  - [Program Structure](#program-structure)
 
 ---
 
@@ -10,9 +23,7 @@ Java is a statically-typed, object-oriented, and platform-independent programmin
 - Object-oriented: it models real-world objects. An object is a collection of data and methods that operate on its data.
 - Platform-independent: Java programs can be written and compiled on one type of machine, such as a Windows system, and executed on another, such as MacOS, without any modification to the source code.
 
-Getting Started with Java in VS Code: <https://code.visualstudio.com/docs/java/java-tutorial>.
-
-You need:
+Getting Started with Java in VS Code: <https://code.visualstudio.com/docs/java/java-tutorial>. Generally, you need:
 
 - Java Development Kit (JDK)
 - VSCode Java extension pack
@@ -100,17 +111,6 @@ System.out.println(Arrays.toString(names));
 // [John, Doe]
 ```
 
-### Keywords
-
-- `public`: the access modifier. It means that the method is visible and can be called from other objects of other types. Other alternatives are `private`, `protected`, `package` (default).
-- `static`: means that the method is associated with the class, not a specific instance (object) of that class. This means that you can call a static method without creating an object of the class.
-- `void`: the return type. It means that this method doesn’t return any value. You would use `int` for a method that returns an integer, for example.
-- `main`: the name of the method. It’s the identifier that the JVM looks for as the starting point of the Java program.
-- `class`: declare a class.
-- `new`: create an instance of a class.
-- `instanceof`: check if an object is an instance of a specific class or implements an interface.
-- `String[] args`: the parameter passed to the main method. It’s an array of `String` objects, where the objects are command line arguments.
-
 ### Operators
 
 Arithmetic:
@@ -157,3 +157,44 @@ public class SimpleAddition {
 ```
 
 The `print()` method is similar to `println()`, except that it does not insert a new line at the end of the output.
+
+### Keywords
+
+- `public`: the access modifier. It means that the method is visible and can be called from other objects of other types. Other alternatives are `private`, `protected`, `package` (default).
+- `static`: means that the method is associated with the class, not a specific instance (object) of that class. This means that you can call a static method without creating an object of the class.
+- `void`: the return type. It means that this method doesn’t return any value. You would use `int` for a method that returns an integer, for example.
+- `main`: the name of the method. It’s the identifier that the JVM looks for as the starting point of the Java program.
+- `class`: declare a class.
+- `new`: create an instance of a class.
+- `instanceof`: check if an object is an instance of a specific class or implements an interface.
+- `String[] args`: the parameter passed to the main method. It’s an array of `String` objects, where the objects are command line arguments.
+
+## Methods
+
+A block of code that runs when it is called (functions).
+
+```java
+public class Main {
+  static void myMethod() {
+    // code to be executed
+  }
+}
+```
+
+```java
+public class Main {
+  static void myMethod(String name) {
+    System.out.println(name + " just got executed!");
+  }
+
+  public static void main(String[] args) {
+    myMethod("Bolaji");
+    myMethod("John");
+    myMethod("Doe");
+  }
+}
+
+// Bolaji just got executed!
+// John just got executed!
+// Doe just got executed!
+```
