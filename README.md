@@ -1,6 +1,7 @@
 # Notes: Learning Java and Spring Boot
 
-Lorem.
+[Notes](./notes)
+[Snippets](./snippets)
 
 ---
 
