@@ -118,7 +118,7 @@ Arithmetic:
 - `+` (plus or addition)
 - `-` (minus or subtraction)
 - `*` (multiplication)
-- `/`` (division)
+- `/` (division)
 - `%` (modulus or remainder)
 - `++` (increment)
 - `--` (decrement)
